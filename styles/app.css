@@ -7,46 +7,64 @@
 }
 
 
-html, body{
+html,
+body {
     font-family: sans-serif;
 }
 
-a{
+::selection{
+    background-color: crimson;
+    color: white;
+}
+
+a {
     color: inherit;
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.justify-between{
+.justify-between {
     justify-content: space-between;
 }
 
-.items-center{
+.items-center {
     align-items: center;
 }
 
 
 
-header{
-    height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , 
-    url('../images/set1-happy-couple-1500x630.jpg') no-repeat center center / cover;
+header {
+    /* height: 500px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/set1-happy-couple-1500x630.jpg') no-repeat center center / cover;
     color: white;
 }
 
-nav{
-    padding: 5px 30px;
+nav {
+    padding: 5px 40px;
+    font-size: 14px;
 }
 
 nav ul {
     flex-direction: row;
-    gap: 25px;
 }
 
+nav>ul a {
+    padding: 15px 0;
+}
+
+nav span {
+    padding: 0 15px;
+    border-right: 1px solid white;
+}
+
+.no-border{
+    border: none;
+}
