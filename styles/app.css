@@ -12,7 +12,7 @@ body {
     font-family: sans-serif;
 }
 
-::selection{
+::selection {
     background-color: crimson;
     color: white;
 }
@@ -38,18 +38,19 @@ ul {
     align-items: center;
 }
 
-
-
 header {
     /* height: 500px; */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../images/set1-happy-couple-1500x630.jpg') no-repeat center center / cover;
     color: white;
+    position: relative;
 }
 
 nav {
     padding: 5px 40px;
     font-size: 14px;
+    position: absolute;
+    width: 100%;
 }
 
 nav ul {
@@ -60,11 +61,31 @@ nav>ul a {
     padding: 15px 0;
 }
 
+nav a :hover {
+    color: crimson;
+    transition: 0.5s;
+}
+
 nav span {
     padding: 0 15px;
     border-right: 1px solid white;
 }
 
-.no-border{
+.no-border {
     border: none;
+}
+
+.slogan h1 {
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 40px;
+}
+
+.slogan p {
+    font-size: 12px;
+}
+
+.slogan {
+    text-align: center;
+    padding: 200px 0;
 }
