@@ -9,6 +9,7 @@
 :root {
     --primary: #b51917;
     --text-gray: #a6a6a6;
+    --back-color: #f8f8f8;
 }
 
 
@@ -41,6 +42,10 @@ ul {
 
 .items-center {
     align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 header h1,
@@ -99,7 +104,8 @@ nav span {
     padding: 200px 0;
 }
 
-#getting-married {
+#getting-married,
+#our-story {
     padding: 100px 0;
     text-align: center;
 }
@@ -116,4 +122,79 @@ nav span {
 time {
     color: var(--primary);
     font-size: 40px;
+}
+
+i {
+    font-size: 20px;
+    transform: translate(0, -50%);
+
+    background-color: white;
+    padding: 0 12px;
+}
+
+.heart {
+    color: var(--primary);
+    margin: 50px auto;
+    width: 400px;
+    height: 1px;
+    background-color: var(--text-gray);
+}
+
+#our-story {
+    position: relative;
+}
+
+#our-story i,
+#our-story {
+    background-color: var(--back-color);
+}
+
+#our-story p {
+    width: 30%;
+    color: var(--text-gray);
+    text-align: justify;
+}
+
+#our-story>div.flex {
+    gap: 70px;
+}
+
+#our-story span {
+    color: var(--primary);
+}
+
+#our-story::after,
+#who-are-we::after {
+    content: '';
+    border: 25px solid transparent;
+    border-top: 25px solid white;
+    display: inline-block;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#who-are-we::after {
+    border-top: 25px solid var(--back-color);
+}
+
+#who-are-we {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/set1-young-couple-bw.jpg') no-repeat top center / cover;
+
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: white;
+}
+
+#who-are-we h2{
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+#who-are-we p{
+    font-size: 14px;
 }
