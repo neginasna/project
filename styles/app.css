@@ -182,6 +182,9 @@ i {
 
 #who-are-we {
     position: relative;
+}
+
+.title {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/set1-young-couple-bw.jpg') no-repeat top center / cover;
 
@@ -190,11 +193,59 @@ i {
     color: white;
 }
 
-#who-are-we h2{
+#who-are-we h2 {
     font-size: 60px;
     margin-bottom: 5px;
 }
 
-#who-are-we p{
+#who-are-we p {
     font-size: 14px;
+}
+
+
+.intro {
+    padding: 100px 0;
+    gap: 50px;
+}
+
+.left,
+.right {
+    width: 40%;
+}
+
+.left img,
+.right img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.left h2,
+.right h2 {
+    text-align: center;
+    color: var(--primary);
+
+}
+
+.left p,
+.right p {
+    color: var(--text-gray);
+    text-align: justify;
+    width: 80%;
+    line-height: 1.8em;
+    margin-top: 8px;
+}
+
+.left>div,
+.right>div {
+    overflow: hidden;
+}
+
+.left>div>img,
+.right>div>img {
+    transition: 0.5s;
+}
+
+.left>div:hover>img,
+.right>div:hover>img {
+    transform: scale(1.5);
 }
