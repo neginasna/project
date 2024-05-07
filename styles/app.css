@@ -10,6 +10,7 @@
     --primary: #b51917;
     --text-gray: #a6a6a6;
     --back-color: #f8f8f8;
+    --text-darkgray:rgb(63, 61, 61);
 }
 
 
@@ -167,7 +168,8 @@ i {
 
 #our-story::after,
 #who-are-we::after,
-#maids::after {
+#maids::after,
+#accomodation::after {
     content: '';
     border: 25px solid transparent;
     border-top: 25px solid white;
@@ -274,6 +276,89 @@ i {
     margin: 30px 0;
 }
 
+#maids figcaption {
+    margin-bottom: 20px;
+}
+
 .bridesmaid h2 {
     color: var(--primary);
 }
+
+#details {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/set1-young-couple-bw.jpg') no-repeat top center / cover;
+
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: white;
+}
+
+#details h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+#details p {
+    font-size: 14px;
+}
+
+.ceremony {
+    padding: 100px 0;
+    gap: 50px;
+}
+
+.left-side,
+.right-side {
+    width: 40%;
+}
+
+.left-side img,
+.right-side img {
+    width: 100%;
+
+    margin: 15px 0;
+}
+
+.left-side h2,
+.right-side h2 {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--text-darkgray);
+    font-family: sans-serif;
+}
+
+.right-side span{
+    color: var(--primary);
+}
+
+.left-side p,
+.right-side p {
+    color: var(--text-gray);
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#accomodation {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/set1-young-couple-bw.jpg') no-repeat top center / cover;
+
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: white;
+
+    position: relative;
+}
+
+#accomodation h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+#accomodation p {
+    font-size: 14px;
+}
+
+
+
+
