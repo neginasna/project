@@ -286,7 +286,7 @@ i {
 
 #details {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/set1-young-couple-bw.jpg') no-repeat top center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/balloon.jpg') no-repeat top center / cover;
 
     background-attachment: fixed;
     padding: 100px 0;
@@ -341,7 +341,7 @@ i {
 
 #accomodation {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/set1-young-couple-bw.jpg') no-repeat top center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hotel.webp') no-repeat top center / cover;
 
     background-attachment: fixed;
     padding: 100px 0;
