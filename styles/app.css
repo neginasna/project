@@ -10,7 +10,7 @@
     --primary: #b51917;
     --text-gray: #a6a6a6;
     --back-color: #f8f8f8;
-    --text-darkgray:rgb(63, 61, 61);
+    --text-darkgray: rgb(63, 61, 61);
 }
 
 
@@ -136,13 +136,13 @@ i {
     transform: translate(0, -50%);
 
     background-color: white;
-    padding: 0 12px;
+    padding: 0 15px;
 }
 
 .heart {
     color: var(--primary);
     margin: 50px auto;
-    width: 600px;
+    width: 400px;
     height: 1px;
     background-color: var(--text-gray);
 }
@@ -251,7 +251,7 @@ i {
     transform: scale(1.5);
 }
 
-#maids{
+#maids {
     position: relative;
 }
 
@@ -328,7 +328,7 @@ i {
     font-family: sans-serif;
 }
 
-.right-side span{
+.right-side span {
     color: var(--primary);
 }
 
@@ -359,6 +359,48 @@ i {
     font-size: 14px;
 }
 
+@media (max-width: 900px) {
+
+    nav {
+        justify-content: center !important;
+    }
+
+    nav ul {
+        display: none !important;
+    }
+
+    #getting-married p,
+    #our-story p,
+    .left,
+    .right,
+    .left-side img,
+    .right-side img {
+        width: 80%;
+    }
+
+    #our-story>div.flex {
+        flex-wrap: wrap;
+    }
+
+    .intro {
+        flex-wrap: wrap;
+    }
 
 
+    #maids {
+        flex-wrap: wrap;
+    }
 
+    #maids img {
+        margin: 35px 0;
+    }
+
+    .groomesmen,
+    .bridesmaid {
+        width: 100%;
+    }
+
+    #wedding{
+        flex-wrap: wrap;
+    }
+}
